@@ -1,1 +1,21 @@
-<html lang
+{{define "base"}}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GoTimer</title>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <script
+      src="https://unpkg.com/htmx.org@2.0.4"
+      integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container"
+      <div class="container">
+        <pre class="content">{{template "main" .}}</pre>
+      </div>
+      <div id="error"></div>
+  </body>
+</html>
+{{end}}
